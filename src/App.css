@@ -90,6 +90,7 @@ a{
     display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
 }
 .blog{
   display: flex;
@@ -341,4 +342,20 @@ label #cancel{
   left: 190px;
   gap: 90px;
   margin-top: 26px;
+}
+.comment-post{
+  display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: white;
+}
+.comment-post input{
+  padding: 10px;
+  width: 60%;
+
+}
+.comment-post button{
+  background: black;
+    color: aliceblue;
+    width: 10%;
 }

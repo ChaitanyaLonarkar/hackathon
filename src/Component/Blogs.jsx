@@ -6,10 +6,10 @@ import b1 from "../assets/ro.jpg";
 import { FaShareFromSquare } from "react-icons/fa6";
 
 import { useState } from "react";
-
+import Box from "../Component/Box";
 export default function Blogs() {
   const [input, setinput] = useState("");
-  
+
   return (
     <>
       <div className="all">
@@ -49,6 +49,7 @@ export default function Blogs() {
               {/* </div> */}
             </div>
           </div>
+          <Box />
         </div>
         <div className="outer-blog">
           <div className="blog">
