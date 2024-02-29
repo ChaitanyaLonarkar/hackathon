@@ -9,7 +9,10 @@ import { useState } from "react";
 import Box from "../Component/Box";
 export default function Blogs() {
   const [input, setinput] = useState("");
-
+const [Show,setShow]=useState(false)
+  const show=()=>{
+    setShow(true)
+  }
   return (
     <>
       <div className="all">
@@ -39,7 +42,7 @@ export default function Blogs() {
                 </div>
                 <div className="btn">
                   <FaRegComment />
-                  <button>Comment</button>
+                  <button onClick={show}>Comment</button>
                 </div>
                 <div className="btn">
                   <FaShareFromSquare />
@@ -49,7 +52,8 @@ export default function Blogs() {
               {/* </div> */}
             </div>
           </div>
-          <Box />
+          {/* <Box/> */}
+          {Show && <Box />}
         </div>
         <div className="outer-blog">
           <div className="blog">
