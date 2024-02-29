@@ -8,11 +8,11 @@ export default function Box() {
   const abuse = () => {
     
     if (Abuse.includes(input.toLowerCase())) {
-      alert("Abusse",(setAlertCount(alertCount + 1)));
+      alert("You are trying to add abusing comment ",(setAlertCount(alertCount + 1)));
     }
-    else{
-      alert("k")
-    }
+    // else{
+    //   alert("k")
+    // }
     console.log(alertCount)
 
     if(alertCount==3){
@@ -21,6 +21,8 @@ export default function Box() {
      const btn= document.getElementById("btn");
      btn.disabled = true;
      btn.style.backgroundColor="red"
+     input.value="Comment feature is blocked"
+
     }
   };
   return (
